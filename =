@@ -1,0 +1,2 @@
+ERROR: "bundle show" was called with arguments ["gem jquery-rails, ", "1.0.12"]
+Usage: "bundle show GEM [OPTIONS]"

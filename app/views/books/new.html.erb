@@ -1,0 +1,12 @@
+<div style="width: 700px;color: whitesmoke;margin-left: 5%;">
+  <br>
+  <p>Enter the Book details you want to create</p>
+  <%=form_for @book do |form|%>
+    <p>Author: <%=form.text_field :author, style: "width:400px"%></p><br />
+    <p>Critics: <%=form.text_field :critics, style: "width:400px"%></p><br />
+    <p>Genre: &nbsp;<%=form.text_field :genre, style: "width:400px"%></p><br />
+    <p>Price: &nbsp;&nbsp;<%=form.text_field :price, style: "width:400px"%></p><br />
+    <p>Title: &nbsp;&nbsp;&nbsp;<%=form.text_field :title, style: "width:400px"%></p><br />
+    <%=form.submit%>
+  <%end%>
+</div>

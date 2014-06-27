@@ -1,0 +1,21 @@
+<div style="margin:20px; color: white;">
+	<div style="color: black"><button><%=link_to "Manage Books", admin_root_path%></button></div><br/>
+	<%@books.each_with_index do |b, i|%>
+		<a href="<%=book_path(b)%>" style="color: white;font-size:15px"><%= i+1%> - <span style="text-decoration: underline;font-size: 15px;color: white"><%=b.title%></span></a>
+		<p>Author: <%=b.author%></p>
+		<p>Genre: <%=b.genre%></p>
+		<p>Price($): <%=b.price%></p>
+		<p>Critics: <%=b.critics%></p>
+
+	  <%if b.reviews.present?%>
+		<p style="text-decoration: underline;font-size: 15px;color: lightgreen;margin-bottom:0px">The Reviews</p>
+		<%b.reviews.each_with_index do |rev,index|%>
+		  <%= index+1%>) 
+		  <p style="margin-bottom:0px"><%= rev.writer%></p>
+		  <p style="margin-bottom:0px"><%= rev.reviews%></p>
+		<%end%>
+	  <%end%>
+      <hr>
+	<%end%>
+
+</div>

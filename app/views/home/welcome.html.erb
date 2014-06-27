@@ -1,0 +1,10 @@
+<div style="margin: 20px">
+  <p style="font-size: 28px;text-align: center; text-indent: 12pc;">Welcome to Karthik's Test_app Project</p>
+  <div style="font-size: 28px;text-align: center;">
+    <%if current_user%>
+	  <%=link_to "Show Book List", books_path%>
+	<%else%>
+	  <%=link_to "Sign in", new_user_session_path%> | <%=link_to "Sign up", new_user_registration_path%>
+	<%end%>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div style="width: 700px;color: whitesmoke;margin-left: 5%;">
+  <br>
+  <p>Enter the "<%=@book.title%>" Book review you want to create</p>
+  <%=form_for @review do |form|%>
+    <%=form.hidden_field :book_id, value: @book.id%>
+    <p>Reviews: <%=form.text_field :reviews, style: "width:400px"%></p><br />
+    <p>Writer: &nbsp;&nbsp;&nbsp;&nbsp;<%=form.text_field :writer, style: "width:400px"%></p><br />
+    <%=form.submit%>
+  <%end%>
+</div>
