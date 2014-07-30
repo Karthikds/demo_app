@@ -4,7 +4,7 @@ ActiveAdmin.register Book do
   controller do
   	def destroy
 		book = Book.where(id: params[:id]).first
-  		if book.if_reviewed
+  		if book.if_reviewed?
   			redirect_to :back, alert: "This book has reviews . Delete the reviews first."
   		else
   		  super

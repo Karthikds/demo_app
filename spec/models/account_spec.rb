@@ -2,13 +2,18 @@ require 'spec_helper'
 
 describe Account do
 
-  it "show the name" do
+  it "name must be a string" do
   	acc = Account.new("karthik", 23)
-  	acc.name.should == "karthik"
+  	expect(acc.name).to be_an_instance_of(String)
   end
 
-  it "again show the age of the account" do
+  it "age must be a fixnum" do
   	acc = Account.new("karthik", 23)
-  	acc.age.should == 23
+  	expect(acc.age).to be_an_instance_of(Fixnum)
   end
+  it "age must not be less than 1" do
+  	acc = Account.new("karthik", 24)
+  	expect(acc.age).to be >= 1
+  end
+
 end
