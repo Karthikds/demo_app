@@ -1,4 +1,4 @@
-Test_app::Application.routes.draw do
+Demo_app::Application.routes.draw do
   ActiveAdmin.routes(self)
 
    resources :books do
