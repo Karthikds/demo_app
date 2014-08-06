@@ -4,7 +4,9 @@ describe Book do
 # before (:each) {@book = Fabricate(:book)}
 
   it "must have all the attributes" do
-    expect(Factory.create(:contact)).to be_valid
+    # expect(Factory.create(:book)).to be_valid
+
+
   	# expect(@book).to be_valid
   end
 
