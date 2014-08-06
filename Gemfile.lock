@@ -72,6 +72,13 @@ GEM
       meta_programming (>= 0.2.1)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
+    faker (1.4.2)
+      i18n (~> 0.5)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
     has_scope (0.6.0.rc)
@@ -189,6 +196,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise (= 2.0)
   enumerated_attribute
+  factory_girl_rails
+  faker
   jquery-rails (< 3.0.0)
   rails (= 3.2.6)
   rspec-rails (~> 3.0.0.beta)

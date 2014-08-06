@@ -5,7 +5,7 @@ class Book < ActiveRecord::Base
   has_many :reviews
   accepts_nested_attributes_for :reviews, allow_destroy: true
 
-  enum_attr :page_count, ["<150", "<500", "<1000", "1000+"]
+  enum_attr :page_count, %w(<150 <500 <1000 1000+)
 
   def if_reviewed?
   	reviews.present? ? true : false

@@ -42,4 +42,6 @@ gem "jquery-rails", "< 3.0.0"
 
 group :development do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
