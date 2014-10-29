@@ -1,4 +1,4 @@
-## About
+# About
 
 This a demo application for the usage of active admin gem
 
